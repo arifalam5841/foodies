@@ -1,0 +1,1004 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="../images/w_logo.png">
+    <title>Foodies</title>
+    <link rel="stylesheet" href="./CSS/index.css">
+</head>
+
+<body>
+    <div id="restaurent-not-matched-notification">
+        You haven't selected all items from the same Restaurant
+    </div>
+    <!-- ------------ The first page ----------------  -->
+    <div id="customer-or-shopowner-page">
+        <div>
+            <div class="logo-block">
+                <img src="./images/b_logo.png" alt="logo">
+                <h2>Foodies</h2>
+            </div>
+            <img id="whoareyou-text" src="./images/who-are-you-text.png" alt="">
+        </div>
+        <div id="shopowner-customer-btn-main-cont">
+            <div id="shopowner-customer-btn-cont">
+                <button id="customer-btn">Customer</button>
+                <button id="shopowner-btn">Restaurant owner</button>
+            </div>
+        </div>
+
+    </div>
+
+
+    <div id="login-page">
+        <div id="login-form-side">
+            <div class="logo-block">
+                <!-- <img src="../images/b_logo.png" alt="logo"> -->
+                <img id="back-to-customer-owner-page"
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABC0lEQVRIie3Uu0rEUBCA4W/jgs1aLYIgeMfaTizsfAit7HwHG/stfQZLC8VaYVHwCfQZvKEgiCBei2RRcnGzIVkL88MQzjmc+ecMQ6ip+c+MDVvYxC4+sDksaRvH+IyiU1bi5i9nc5F0tixZHvEMTqJvJYyk7M3jDFMpZ6/RnWmMo4UAL8IZyE0jtm7jHIuDJIl4xB3uM+IWh3iPXxzFqe9BqiK2erLgh3gHqwVeOgjLaeKniqWktJlwaI5U2+r1niw+XC3hRC8VeE2/4brBQVRAQgyT6GIh5ayLPTykJH4rUGyCCVxKtqq0X2aQsX+NNVyUJcorhiusYL8qeT8a2MYzNv6qgJqamky+AM3vZ5vXQk0ZAAAAAElFTkSuQmCC"
+                    alt="logo">
+                <h2 id="login-signup-heading">Login</h2>
+            </div>
+            <div id="login-form">
+                <img class="welcome" id="login-welcome" src="./images/welcome.png" alt="">
+                <img class="welcome" id="signup-welcome" src="./images/login-welcome.png" alt="">
+                <img class="welcome" id="restaurant-psswrd-text" src="./images/restaurant-password-text.png" alt="">
+
+                <form id="login-forms-section">
+                    <div class="input-conts" id="name-container">
+                        <span id="name-text">Name</span>
+                        <input type="text" id="signup-name">
+                    </div>
+
+                    <div class="input-conts" id="emails-container" style="display: none;">
+                        Email
+                        <input type="email" id="signupp-email">
+                        <!-- <input type="email" id="signup-email"> -->
+
+                    </div>
+
+                    <!-- <div class=""></div> -->
+
+                    <div class="input-conts" id="password-signup-container" style="display: none;">
+                        password
+                        <input type="text" id="password-signup">
+                        <!-- <input type="email" id="login-email"> -->
+                    </div>
+                    <div class="input-conts" id="login-email-container">
+                        password
+                        <!-- <input type="text" id="password-signup"> -->
+                        <input type="text" id="login-password">
+                    </div>
+
+                    <div class="input-conts" id="restaurant-password-container" style="display: none;">
+                        password
+                        <input type="text" id="Restaurant-password">
+                    </div>
+
+                    <button type="submit" id="main-login-btn">Login</button>
+                    <button type="submit" id="main-signup-btn">Sign up</button>
+                    <button type="submit" id="main-restaurant-login-btn">Confirm</button>
+                    <p id="restaurant-login-warning">No restaurant match</p>
+                    <div id="orsection">
+                        <p id="sing-up-warning">Try another password</p>
+                        <p id="login-warning">Wrong password</p>
+                        <p id="fill-columns-warning">Fill all columns</p>
+                        ______________________ or _______________________
+                        <span id="secondary-signup-btn-cont">Create an account
+                            <a href="/" id="signupbtn">Sign up</a>
+                        </span>
+                        <span id="secondary-login-btn-cont">Already have an account ?
+                            <a href="/" id="loginbtn">Login</a>
+                        </span>
+                    </div>
+                </form>
+            </div>
+        </div>
+        <div id="signup-side">
+            <div id="textcont">
+                <img id="signuptext" src="./images/singnuptext.png" alt="">
+                <img id="logintext" src="./images/logintext.png" alt="">
+                <img id="restrnttext" src="./images/restaurant-text.png" alt="">
+                <button id="textside-signupbtn">Sing up</button>
+                <button id="textside-loginbtn">login</button>
+            </div>
+            <img id="foodgroup" src="./images/foods_group.png" alt="">
+        </div>
+    </div>
+
+    <!-- -----------------------SELECTING AVATAR SECTION -------------------------------------- -->
+    <div id="selecting_avatar">
+        <div class="logo-block">
+            <img src="./images/b_logo.png" alt="logo">
+            <h2>Foodies</h2>
+        </div>
+        <div id="select-avatar-text-container">
+            <img id="select-avatar-text" src="./images/select-avatar-text.png" alt="">
+        </div>
+        <div id="main-avatars-submit-btn-container">
+            <div id="avatars-container">
+                <p id="selected_profile_img"></p>
+                <!-- <div class="avatars-secondary-container">
+                    <img src="./images/avatar1.png" alt="no network">
+                </div>
+                -->
+            </div>
+            <button id="avatar-submit-btn">Select</button>
+            <p id="warning-avatar-page">select an avatar</p>
+        </div>
+    </div>
+
+    <!-- ------------------------------ ADDRESS ENTERING SECTION --------------------------------- -->
+    <div id="entering-addres-page">
+        <div class="logo-block">
+            <img src="./images/b_logo.png" alt="logo">
+            <h2>Foodies</h2>
+        </div>
+        <div id="enter-address-text-container">
+            <img id="enter-address-text" src="./images/enter-your-address-text.png" alt="">
+        </div>
+
+        <div id="address-entery-field-contianer">
+            <div id="address-inputs-container">
+                <div class="address-inputs-cont">
+                    City
+                    <input type="text" id="city-input" placeholder="Taloja..">
+                </div>
+                <div class="address-inputs-cont">
+                    Building
+                    <input type="text" placeholder="" id="building-input">
+                </div>
+                <div class="address-inputs-cont">
+                    Location details
+                    <div id="locations-detail">
+                        <!-- <input type="text" placeholder="sector,plot,phase..." id = "location-input">  -->
+                        <input type="number" placeholder="sector" id="sector">
+                        <input type="text" placeholder="plot" id="plot">
+                        <input type="number" placeholder="phase" id="address-phase">
+
+                    </div>
+                </div>
+                <div class="address-inputs-cont">
+                    Wing
+                    <input type="text" placeholder="" id="wing-input">
+                </div>
+                <div class="address-inputs-cont">
+                    Room number
+                    <input type="number" placeholder="" id="room-number-input">
+                </div>
+                <div class="address-inputs-cont">
+                    Landmark
+                    <input type="text" placeholder="" id="landmark-input">
+                </div>
+            </div>
+
+            <button id="address-submit-btn">Submit</button>
+            <button id="address-update-btn" style="display: none;">Update</button>
+            <button id="rstrnt-address-update-btn" style="display: none;">Update</button>
+            <p id="address-warning" style="display: none;">Fill all columns</p>
+        </div>
+    </div>
+    <!-- -------------------------- HOME PAGE STARTS FROM BELOW ----------------------------------------------------------- -->
+    <div id="home-page">
+
+        <!-- -------------------------- NAVBAR STARTS FROM BELOW ----------------------------------------------------------- -->
+        <nav id="navbar">
+            <div class="logo-block">
+                <img src="./images/w_logo.png" alt="">
+                <h2 id="login-signup-heading">Foodies</h2>
+            </div>
+
+            <div id="web-home-or-restaurant-container">
+                <!--for web site  -->
+                <button id="web-home-btn">Home</button>
+                <button id="web-restaurant-btn">Restaurant</button>
+            </div>
+            <div id="cartbtn-and-menu-btn">
+                <li class="menu-item" id="cart-btn"><img src="./images/cart.png" alt="cart"><a href="/"
+                        id="main-cart-btn-text">Cart</a> <span id="number-of-cart-items">25</span></li>
+                <button id="menu-btn"><img src="./images/menu-icon.png" alt=""></button>
+            </div>
+            <ul id="menu-contianer">
+                <li class="menu-item"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACFUlEQVRIie2Uv2sUQRiGn+9290J0jxQisTDgj0rFWgjaamWVcJBdEATDkTsDbiBgk5DOJiQh5y7ae7uwlqYTPbSJhfcH2KoXrFLIqYTbvc8iKEcue1lCOn27mW/mfWZeZj74ryMkWYW1OB4tdtNZEZ1GuQKUgDbCG1F9XnXd1rEBT6PohvT0JTABfFRlWwr8oscFhNvAmKKB1el4lUqlOwxgZpg3gS8qTD50nO3+uh/HNkmyJCqLSak0rqplEdFcN1iL49GRbvIJ+DlimZMPyuXdrI1BGM6rsolQqzlOkLWu0D8odtNZ4LwK94eZA1Qdpw68RlleaTYHkjgUIKLTQOtgLJkS6sD42Z2dW7kAKFdVyWcOmPxdey0fAE4L/MgLKO7tdQAQsfMCdhC9mBewZ1mXAFSlnQsg8Bbkjh/HmSfqVyoyBaiVGu9yAUCfAWMkydJR5n4UTYB4wFblXvlzLkDVdVuKBiiLQRjODzMX1VeAnRoFb9hBBt6v1el4Xbt0DmXTb4R3EeqpaX7Atr8Xd3cvpyJT9NRTsAHLSNMasJAFOLQXqaoEUTSHsgyMHywDW6lR8PbNxQNdr7nuoZDMbgqw0myaZ75+u2kYeh3VU4i0jcR835+532isgXgibFQdZyCuoYC88l+ETxAei7AxNzOz0N/8TgQAEIThuiqPQFdrrrv4Z/7gRzu29uPRVShMnZTnP6LfU8/Jf5uCkt4AAAAASUVORK5CYII="
+                        alt="image"><a id="main-search-btn" href="/">search</a></li>
+                <!-- <li class="menu-item"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAUCAYAAACNiR0NAAAABmJLR0QA/wD/AP+gvaeTAAAA6ElEQVQ4jc3UsUpDMRTG8V9bd5fqA3Tpcziog0sHH8bdsYKbII4OFVdpheqkvoK2gpMubuIi6KAdcksxVO/NvR36QSDJSf45Xw4cFqwGWjjCbra+rwKs4yebN3GGdhVgDH/FXlXIVN+4xE4V4Eq0HqCH8xKsU1zEm6v4Ev41dRzw2zK8465EdnA9Dwj9ErBP3P4VbEu3ezW9PC/DRzwlZvgvkFDtFA3zDmwobvcFtTxgDYf4yIE9YzvRTZoaObF9wf6NWRMhdKiuUINx0ce2zKxtRrGTbP+tKAzWMcID1qJYJ4MdpwCXQxNUQ1BQ0H4wXwAAAABJRU5ErkJggg==" alt="cart"><a href="/">Cart</a></li>    -->
+                <li class="menu-item"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACOUlEQVRIic1Vu04bURA9Z2wXSZcCJbL3AyiSFjdIvEKKKFCkwKJJYfBnUNPkD/xIkcqW0uAoUlhsTAlfQJHSRJEo0geYk8LsYnZXtpEoONJKe2dnzsy5d+Yu8JQQ9BoLQb9VfkiMzUwe1pdd7Lq8G4T15UdNUAybi05rk74N50entUu9+uossUwaSkfNFUnvQdzcuuRBfTLX1nC9NojV0NoAvgK6BgAIOZI/Lt7uHE9WIN8EOQ/i7+jRpQEfInIAGK7XBkZtgLq88+M85JtJunyKH7wGdfJ7bffzJOnDtd0zAGfRuhg2XcRc0i+lgMSVhMIk8iyIKBC4mppAJA1KKZsGg+dES/HdM4zaTzu03OE0wqDXWAjCL2+iNS13CKGabOE4QdQZ5toarlZPJ5LfzgTs5llkG65WT01ecVr71WFr6V6CoN8qu7Fj8sp4twDAy5+N10GvsZAsxJ1btwcdY7heG5i8YqZOFDPaa7kgClCq2kIez13sBmG9AgAR+Z931ZNJKiPEgxZvUYaKscHCJPIsDqYcjB2jbSTPIZKc3Jb4e79Vdnl3fOIzUew190tH9b2JujNQOqrvFXvN/aQ9PWiSHLx+aAKH3VDuUxNIKJDpiZwGCldC+gZITSyhvGRLxV4jF1dBG2SdiQMrd5VhkcKvqQpAO4B0DuHF6OFc8icThPVlB75DnLvz0zloB+mCZ0AxbC6C+Eb6ttz+Re8Xa7X+tNiZEsRVGzsQlTUrj4Kg3yqPXxtPAv8B/Bshom76d9wAAAAASUVORK5CYII="
+                        alt=""><a href="/" id="orders-page-btn">Orders</a></li>
+                <li class="menu-item" id="profile-btn">
+                    <div id="sketch-container"><img id="nav-profile-image" src="./images/avtar.png" alt=""></div> <a
+                        id="profile-page-btn" href="/">Profile</a>
+                </li>
+                <div id="logout-btn-container"><img id="logout-btn" src="./images/logout-img.png" alt=""></div>
+
+
+            </ul>
+
+        </nav>
+
+        <div id="mobile-home-or-restaurant-container">
+            <!--for mobile  -->
+            <button id="mobile-home-btn">Home</button>
+            <button id="mobile-restaurant-btn">Restaurant</button>
+        </div>
+        <!-- -------------------------- CATEGORY STARTS FROM BELOW ----------------------------------------------------------- -->
+        <div id="category-section">
+            <h3 id="category-heading">
+                Category &#x027E9
+            </h3>
+            <button id="search-btn"><img
+                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABf0lEQVRIid3Uv0pcURDH8Y/GfymsRUww2BqwMTYGRJsUVsHSPoSQIkVeIXkJsUoaTaMINgmxsBB8ig1aBVOpyRJDTDHn4iJ3d8+RlYADl7mX87vznTlzznBXrC9DM4V5jOECDXzFaS8SWMIBLmueJtYxcdPgfXiPv/iJNTzHE1HRC+wl2ElKptjepQD7eNhBt4wf+IW5EsCSqGAfwxn6GdGbBkZyIQdiizpVcN1ei8rf5IinknitAACDojeH7QT9Le9Pk98thFzgC2ZxvxtkPPmjQgh8E6dyvG6xFdJMPqfh161qerNusRXSSH76BpDHOMf3bsLRlMleIWACv7GT+8O6OGHLBZAP6Z9nJVmdiJs8k6F/mwBbBUmBRTEqTsVFG2yTTFXBJT5hoF3AdqN+DpuYFFV9xjGGxMFYSEG38QcrSb+avrNtRIyKQzHPqqzPRJOrHgxgI61tdKooB/hIbFPd9vUM1M3u4aOrHtUl0xNrrejVbUEq0Es8uE3I/7F/Km5WpjVnJ8YAAAAASUVORK5CYII="
+                    alt=""></button>
+            <div id="category-list-container">
+                <a class="category-item" href="/" id="all-category">All</a>
+                <a class="category-item" href="/" id="chi-category">Chiken</a>
+                <a class="category-item" href="/" id="veg-category">Veg</a>
+                <a class="category-item" href="/" id="nonveg-category">Non-Veg</a>
+                <a class="category-item" href="/" id="paneer-category">Paneer</a>
+                <a class="category-item" href="/" id="noodles-category">Noodles</a>
+                <a class="category-item" href="/" id="friedrice-category">Fried Rice</a>
+            </div>
+        </div>
+
+        <!--   -------------------------------- SEARCH BAR -------------------------- -->
+
+        <div id="customer-search-section">
+            <input type="text" id="customer-search-bar" placeholder="Search food item..."
+                >
+                    <img onclick="customer_searching_items()" style="padding: 3px;" id="searching-btn" src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABf0lEQVRIid3Uv0pcURDH8Y/GfymsRUww2BqwMTYGRJsUVsHSPoSQIkVeIXkJsUoaTaMINgmxsBB8ig1aBVOpyRJDTDHn4iJ3d8+RlYADl7mX87vznTlzznBXrC9DM4V5jOECDXzFaS8SWMIBLmueJtYxcdPgfXiPv/iJNTzHE1HRC+wl2ElKptjepQD7eNhBt4wf+IW5EsCSqGAfwxn6GdGbBkZyIQdiizpVcN1ei8rf5IinknitAACDojeH7QT9Le9Pk98thFzgC2ZxvxtkPPmjQgh8E6dyvG6xFdJMPqfh161qerNusRXSSH76BpDHOMf3bsLRlMleIWACv7GT+8O6OGHLBZAP6Z9nJVmdiJs8k6F/mwBbBUmBRTEqTsVFG2yTTFXBJT5hoF3AdqN+DpuYFFV9xjGGxMFYSEG38QcrSb+avrNtRIyKQzHPqqzPRJOrHgxgI61tdKooB/hIbFPd9vUM1M3u4aOrHtUl0xNrrejVbUEq0Es8uE3I/7F/Km5WpjVnJ8YAAAAASUVORK5CYII=" alt="">
+            <img id="remove-search-section-btn"
+                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABXElEQVRIie2VvUoDQRSFz9lS0vgevomIEI2S2YidCbviD4KVtZVWJoORFJrszAqKjfgqNj6BlUXAKuRamIUgJLMTk1T7lcvu+bh3du4FCgoKlkW7/bqyiG8CV8Cg1H/X1tbySpvGbA5K/Q9tzOrM4np941uIcxF0dGL3XVKdpusEHym8jMLwa9q7dIUBQNPaHQq6FNSjmnqYJJWhPIM4i5XSrsxcYgDQxlQE7AHSiMPw/j9SwNHqcaIwfCJkD+CdTtJG9rxlTHk4lBcfKeBRccaociOQYwKfAqYkTn2kM4kBoJWku0LpjhLiQ6U6vhm5Wz1vvMXamAooPUBOgoBlCm5a1ka+OV6tzs6XwqOoVr0FZvujvcTZXV7qdRofIH+lABBVq28MuA3BtU7SeC7isUoPJk2tTC6QLaFc5ZFPbXW2JEhcREolrjDgd0kQ1ISsueb1VBa1FgsKCubGD2CZtBal/3eyAAAAAElFTkSuQmCC"
+                alt="">
+        </div>
+
+        <!-- --------------------------------------- BANNER STARTS FROM BELOW -------------------------------------------------- -->
+        <div id="home-page-contants">
+            <div id="banner-container">
+                <div class="banner" id="slide1"></div>
+                <div class="banner" id="slide2"></div>
+                <div class="banner" id="slide3"></div>
+            </div>
+            <div id="banner-dots-container">
+                <a href="#slide1" id="slide-dot1"></a>
+                <a href="#slide2" id="slide-dot2"></a>
+                <a href="#slide3" id="slide-dot3"></a>
+            </div>
+
+
+
+            <!-- -------------------------- Items container STARTS FROM BELOW -------------------------------------------------- -->
+
+            <div id="items-container">
+
+                <div class="item">
+                    <div id="item-img-container">
+                        <img src="./images/item-exp2.jpg" alt="">
+                    </div>
+                    <div id="discription">
+                        <h4 id="food-name">Chicken tandoori</h4>
+                        <div id="price-section">
+                            <h3 id="price">&#x20B9; 299</h3>
+                            <h4 id="cutted-price">&#x20B9; 599</h4>
+                            <h4 id="offer">&#37; 45 OFF</h4>
+                        </div>
+                        <div id="food-category-section">
+                            <span></span>
+                            <h4>non-veg</h4>
+                        </div>
+                        <div id="qty-for">
+                            for - 1/2
+                        </div>
+                        <button id="adding-to-cart-btn"><img
+                                src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAAAMklEQVRIiWNgGGngPxQTDZho5JBRC0YtGEoWMCKxScpAxJpNcx+QCkaLilELRi0YkQAArMYFIENGFBoAAAAASUVORK5CYII="
+                                alt=""></button>
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!-- ------------------------- ITEMS SECTION END ----------------------------- -->
+
+        </div>
+        <!-- CART ITEMS PAGE ----------------------------------- -->
+        <div id="cart-items-page">
+            <div id="carts-items-containers">
+                <!-- <div class="cart-item">
+                    <div id="cart-item-left-side">
+                        <img id="food-category-sign-img" src="./images/veg-sign.png" alt="category">
+                        <h3 id="cart-food-name">paneer tikka</h3>
+                    </div>
+                    <div id="cart-item-right-side">
+                        <h3 id="cart-item-price">&#x20B9; 300</h3>
+                        <div id="item-quantity-container">
+                            <button id="increase-cart-item">
+                                <img style="width: 16px;" src="./images/add-img.png" alt="">
+                            </button>
+                            <p id="item-quantity">4</p>
+                            <button id="decrease-cart-item">
+                                <img src="../images/substract.png" alt="">
+                            </button>
+                        </div>
+                        <img id="remove-cart-item-btn"
+                            src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABXElEQVRIie2VvUoDQRSFz9lS0vgevomIEI2S2YidCbviD4KVtZVWJoORFJrszAqKjfgqNj6BlUXAKuRamIUgJLMTk1T7lcvu+bh3du4FCgoKlkW7/bqyiG8CV8Cg1H/X1tbySpvGbA5K/Q9tzOrM4np941uIcxF0dGL3XVKdpusEHym8jMLwa9q7dIUBQNPaHQq6FNSjmnqYJJWhPIM4i5XSrsxcYgDQxlQE7AHSiMPw/j9SwNHqcaIwfCJkD+CdTtJG9rxlTHk4lBcfKeBRccaociOQYwKfAqYkTn2kM4kBoJWku0LpjhLiQ6U6vhm5Wz1vvMXamAooPUBOgoBlCm5a1ka+OV6tzs6XwqOoVr0FZvujvcTZXV7qdRofIH+lABBVq28MuA3BtU7SeC7isUoPJk2tTC6QLaFc5ZFPbXW2JEhcREolrjDgd0kQ1ISsueb1VBa1FgsKCubGD2CZtBal/3eyAAAAAElFTkSuQmCC"
+                            alt="">
+
+                    </div>
+
+                </div> -->
+
+
+
+            </div>
+            <div id="bill-section-container">
+                <h1>Bill Detail</h1>
+                <div id="bill">
+                    <span id="bill-date-time">2 July 2022 | 21:09:54 PM</span>
+                    <div class="bill-upper-item" id="bill-total-item-detail">
+                        <h4>Items Total</h4>
+                        <p id="total-item">47</p>
+                    </div>
+                    <div class="bill-upper-item" id="bill-total-price-detail">
+                        <h4>Total Price</h4>
+                        <p id="total-price">&#x20B9; 949</p>
+                    </div>
+                    <div id="bill-border"></div>
+                    <div class="bill-below-item" id="bill-delivery-charge">
+                        <h4>Delivery Charge</h4>
+                        <p>FREE</p>
+                    </div>
+                    <div class="bill-below-item" id="bill-tips">
+                        <h4>Tips</h4>
+                        <p>FREE</p>
+                    </div>
+                    <div class="bill-below-item" id="bill-gst">
+                        <h4>GST</h4>
+                        <p>&#x20B9; 0</p>
+                    </div>
+                    <div id="to-pay-section">
+                        <h2>To Pay</h2>
+                        <h2 id="delivery-charge">&#x20B9; 949</h2>
+                    </div>
+                    <div id="thank-you-msg">
+                        Thank you
+                    </div>
+                    <div id="order-herewego-cont">
+                        <p id="here-we-go-text">Here we go !</p>
+                        <button id="cart-order-btn">ORDER</button>
+                    </div>
+                </div>
+
+
+            </div>
+
+            <!-- ================== ORder restaurant list ============ -->
+
+            <div id="ordering-restaurant-list-container">
+                <div id="upper-cont">
+                    <h3>Select Restaurant</h3>
+                    <img id="remove-resturant-list"
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAB4AAAAeCAYAAAA7MK6iAAAABmJLR0QA/wD/AP+gvaeTAAABXElEQVRIie2VvUoDQRSFz9lS0vgevomIEI2S2YidCbviD4KVtZVWJoORFJrszAqKjfgqNj6BlUXAKuRamIUgJLMTk1T7lcvu+bh3du4FCgoKlkW7/bqyiG8CV8Cg1H/X1tbySpvGbA5K/Q9tzOrM4np941uIcxF0dGL3XVKdpusEHym8jMLwa9q7dIUBQNPaHQq6FNSjmnqYJJWhPIM4i5XSrsxcYgDQxlQE7AHSiMPw/j9SwNHqcaIwfCJkD+CdTtJG9rxlTHk4lBcfKeBRccaociOQYwKfAqYkTn2kM4kBoJWku0LpjhLiQ6U6vhm5Wz1vvMXamAooPUBOgoBlCm5a1ka+OV6tzs6XwqOoVr0FZvujvcTZXV7qdRofIH+lABBVq28MuA3BtU7SeC7isUoPJk2tTC6QLaFc5ZFPbXW2JEhcREolrjDgd0kQ1ISsueb1VBa1FgsKCubGD2CZtBal/3eyAAAAAElFTkSuQmCC"
+                        alt="">
+                </div>
+
+                <div id="ordering-restaurant-list">
+                    <!-- <div class="ordering-restaurant">
+                                                <div id="profile">
+                                                    <div id="img-cont">
+                                                        <img src="./images/avatar1.png" alt="">
+                                                    </div>
+                                                    <span>|</span>
+                                                </div>
+                                                <div id="info">
+                                                    <h2>Restaurant name</h2>
+                                                    <p>panchanand height c wing 802 sector 9 , plot 15,phase 1 toloja
+                                                    <p>
+                                                </div>
+                                            </div> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- ORDERS PAGE -------------------------------------------- -->
+        <div id="cutomer-orders-page-container">
+
+            <div id="orders-page">
+
+                <!-- <div class="order-info">
+                                    <h3>Restaurant</h3>
+                                    <hr>
+                                    <div style="background-color: rgb(67 149 91); padding: 9px 0;">
+                                        <p style="color: white;">
+                                            Order - '5' has confirmed !
+                                        </p>
+                                    </div>
+                        
+                                </div> -->
+
+                <!-- <div class="order-info">
+                  
+                    <h3>Restaurant</h3>
+                    <hr>
+                    <div style="background-color: rgb(225 79 79);">
+                        <p style="color: white;">
+                            We are sorry ,your order - '6' has cancelled due to some reason.
+                        </p>
+                    </div>
+                </div>
+                <div class="order-info">
+                    <span>
+                        5</span>
+                    <h3>Restaurant</h3>
+                    <hr>
+                    <div>
+                        <p>
+                            Your order has sent ,we will update you as soon as your order is confirmed. 'Remember your
+                            order number'
+                        </p>
+                    </div>
+                </div>
+                <div class="order-info">
+                    <span>
+                        6
+                    </span>
+                    <h3>Restaurant</h3>
+                    <hr>
+                    <div>
+                        <p>
+                            Your order has sent ,we will update you as soon as your order is confirmed. 'Remember your
+                            order number'
+                        </p>
+                    </div>
+                </div> -->
+
+            </div>
+        </div>
+
+
+        <!-- PROFILE PAGE -------------------------------------------------------------------------- -->
+        <div id="profile-page">
+            <div id="profile-page-upper-part">
+                <div id="profilepage-profile">
+                    <img id="profilepage-profileimage" src="./images/sample-profile.png" alt="">
+                </div>
+                <div id="profilepage-personal-detail">
+                    <h1 id="profilepage-name">Arif Alam</h1>
+                    <div id="profilepage-mobile-number-container">
+                        <h4>Password - </h4>
+                        <h4 id="profilepage-password" style="margin-left: 5px;">arifalam</h4>
+                    </div>
+                    <div id="profilepage-email-container">
+                        <h4>E-mail - </h4>
+                        <h4 id="profilepage-email">arifalam1207@gmail.com</h4>
+                    </div>
+                    <p id="socket-id-cont" style="display: none;"></p>
+                </div>
+
+                <button id="profile-page-update-btn">update</button>
+            </div>
+
+            <div id="profile-page-below-part">
+                <span>Address</span>
+                <div class="PG-address-blocks">
+                    <!-- First line  -->
+                    <div class="profilepage-address-inputs-cont">
+                        <!-- # 'PG' stands for 'profilepage' # -->
+                        City
+                        <h3 id="PG-city">Navi mumbai</h3>
+                    </div>
+                    <div class="profilepage-address-inputs-cont">
+                        <!-- # 'PG' stands for 'profilepage' # -->
+                        State
+                        <h3 id="PG-state">Maharashtra</h3>
+                    </div>
+
+                    <div class="profilepage-address-inputs-cont">
+                        <!-- # 'PG' stands for 'profilepage' # -->
+                        Pincode
+                        <h3 id="PG-pincode">410208</h3>
+                    </div>
+                </div>
+                <div class="PG-address-blocks">
+                    <!-- First line  -->
+                    <div class="profilepage-address-inputs-cont">
+                        <!-- # 'PG' stands for 'profilepage' # -->
+                        Place
+                        <h3 id="PG-place">Taloja</h3>
+                    </div>
+                    <div class="profilepage-address-inputs-cont">
+                        <!-- # 'PG' stands for 'profilepage' # -->
+                        Phase
+                        <h3 id="PG-phase">1</h3>
+                    </div>
+                    <div class="profilepage-address-inputs-cont">
+                        <!-- # 'PG' stands for 'profilepage' # -->
+                        Landmark
+                        <h3 id="PG-landmark">Unioun bank of india</h3>
+                    </div>
+                    <div class="profilepage-address-inputs-cont">
+                        <!-- # 'PG' stands for 'profilepage' # -->
+                        Building
+                        <h3 id="PG-building">Panchanand Heights</h3>
+                    </div>
+                </div>
+                <div class="PG-address-blocks">
+                    <!-- First line  -->
+                    <div class="profilepage-address-inputs-cont">
+                        <!-- # 'PG' stands for 'profilepage' # -->
+                        Wing
+                        <h3 id="PG-wing">C</h3>
+                    </div>
+                    <div class="profilepage-address-inputs-cont">
+                        <!-- # 'PG' stands for 'profilepage' # -->
+                        Room number
+                        <h3 id="PG-roomnumber">802</h3>
+                    </div>
+                    <div class="profilepage-address-inputs-cont">
+                        <!-- # 'PG' stands for 'profilepage' # -->
+                        Sector
+                        <h3 id="PG-sector">9</h3>
+                    </div>
+                    <div class="profilepage-address-inputs-cont">
+                        <!-- # 'PG' stands for 'profilepage' # -->
+                        Plot
+                        <h3 id="PG-plot">15-18</h3>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- ---------------------------- RESTAURANTS LIST PAGE ---------------------------------  -->
+        <div id="restaurants-list-page">
+            <!-- <div class="restaurants">
+               ----------- #'RL' stands for 'Restaurant list'# -------
+                <div id="RL-restaurant-upper">
+                    <img src="https://i.pinimg.com/originals/fb/78/c5/fb78c539dea435e436d12f9700c31790.jpg" alt="">
+                </div>
+                <div id="RL-restaurant-lower">
+                    <h1>aged.</h1>
+                    <div id="RL-restaurant-address">
+                        Taloja, phase - 1, sector - 9, plot - 16, Panchnand Heights , shop no. 12-15
+                    </div>
+                </div>
+            </div> -->
+
+        </div>
+    </div>
+
+
+
+
+    <!-- =========================== ADDING RESTAURANT AND UPDATING WEBSITE DATA PAGE FOR OWNER PAGE ============================ -->
+
+    <div id="updating-website-page">
+        <div id="updating-menu-page">
+            <h1 class="heading">Update Website</h1>
+
+            <a href="#" id="add-restaurant-page-btn">Add Restaurant</a>
+            <a href="#" id="remove-restaurant-page-btn">Remove Restaurant</a>
+            <a href="#" id="change-password-page-restaurant-btn">Change Password</a>
+            <a href="#" id="add-food-item-page-btn">Add Food Items</a>
+
+
+        </div>
+
+        <div id="add-restaurant-page">
+            <h1 class="heading">Add Restaurants</h1>
+
+            <div id="restaurant-input-data-box">
+                <input type="text" id="add-rt-name" placeholder="Name">
+                <input type="text" id="add-rt-email" placeholder="E-mail">
+                <input type="text" id="add-rt-phone" placeholder="Phone no.">
+                <input type="text" id="add-rt-pass" placeholder="Create Password">
+                <input type="text" id="add-rt-city" placeholder="City">
+                <input type="text" id="add-rt-build" placeholder="Building">
+                <input type="text" id="add-rt-sec" placeholder="Sector">
+                <input type="text" id="add-rt-plot" placeholder="Plot">
+                <input type="text" id="add-rt-phase" placeholder="Phase">
+                <input type="text" id="add-rt-landmark" placeholder="Landmark">
+
+                <Button id="add-restaurant-btn">Add</Button>
+
+            </div>
+
+        </div>
+
+        <div id="Remove-Restaurant-page">
+            <h1 class="heading">Remove Restaurents</h1>
+
+            <div id="input-box">
+                <input type="text" id="remove-rt-name" placeholder="Restaurant name">
+                <button id="remove-restaurant-btn">Remove</button>
+
+            </div>
+        </div>
+        <div id="change-password-page">
+            <h1 class="heading">Change Password of Restaurants</h1>
+
+            <div id="input-box">
+                <input type="text" id="change-pass-rt-name" placeholder="Restaurant name">
+                <input type="text" id="change-pass-rt-newpass" placeholder="New Password">
+                <button id="change-password-btn">Change</button>
+
+            </div>
+        </div>
+
+        <div id="add-food-items-page">
+            <h1 class="heading">Add Food Items</h1>
+
+            <div id="input-box">
+                <input type="text" id="add-item-name" placeholder="Name">
+                <input type="text" id="add-item-price" placeholder="Price">
+                <input type="text" id="add-item-category" placeholder="Category">
+                <input type="text" id="add-item-qty" placeholder="Quantity">
+                <input type="text" id="add-item-rt-name" placeholder="Restaurant Name">
+                <input type="text" id="add-item-img" placeholder="Image Adresss">
+                <button id="add-item-btn">Add</button>
+
+            </div>
+        </div>
+
+    </div>
+
+
+    <!-- /* // ================= RESTAURANT USERS HOME PAGE ======================= //  */ -->
+
+    <div id="resautrant-home-page">
+        <nav id="restaurant-navbar">
+            <div class="logo-block">
+                <img src="./images/w_logo.png" alt="">
+                <h2 id="login-signup-heading">Foodies</h2>
+                <h3 id="rstrnt-nav-heading">(Ayesha Restaurant)</h3>
+            </div>
+
+
+            <div id="homebtn-and-menu-btn">
+                <li class="restarurant-menu-item" id="restaurant-home-btn"><img src="./images/home-icon.png"
+                        alt="cart"><a href="/" id="restaurant_home-btn-a">Home</a> </li>
+                <button id="restaurant-menu-btn"><img src="./images/menu-icon.png" alt=""></button>
+            </div>
+            <ul id="restaurant-menu-contianer">
+                <li class="restarurant-menu-item"><img
+                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAABmJLR0QA/wD/AP+gvaeTAAACFUlEQVRIie2Uv2sUQRiGn+9290J0jxQisTDgj0rFWgjaamWVcJBdEATDkTsDbiBgk5DOJiQh5y7ae7uwlqYTPbSJhfcH2KoXrFLIqYTbvc8iKEcue1lCOn27mW/mfWZeZj74ryMkWYW1OB4tdtNZEZ1GuQKUgDbCG1F9XnXd1rEBT6PohvT0JTABfFRlWwr8oscFhNvAmKKB1el4lUqlOwxgZpg3gS8qTD50nO3+uh/HNkmyJCqLSak0rqplEdFcN1iL49GRbvIJ+DlimZMPyuXdrI1BGM6rsolQqzlOkLWu0D8odtNZ4LwK94eZA1Qdpw68RlleaTYHkjgUIKLTQOtgLJkS6sD42Z2dW7kAKFdVyWcOmPxdey0fAE4L/MgLKO7tdQAQsfMCdhC9mBewZ1mXAFSlnQsg8Bbkjh/HmSfqVyoyBaiVGu9yAUCfAWMkydJR5n4UTYB4wFblXvlzLkDVdVuKBiiLQRjODzMX1VeAnRoFb9hBBt6v1el4Xbt0DmXTb4R3EeqpaX7Atr8Xd3cvpyJT9NRTsAHLSNMasJAFOLQXqaoEUTSHsgyMHywDW6lR8PbNxQNdr7nuoZDMbgqw0myaZ75+u2kYeh3VU4i0jcR835+532isgXgibFQdZyCuoYC88l+ETxAei7AxNzOz0N/8TgQAEIThuiqPQFdrrrv4Z/7gRzu29uPRVShMnZTnP6LfU8/Jf5uCkt4AAAAASUVORK5CYII="
+                        alt="image"><a id="restaurant-main-search-btn" href="/">search (areas)</a></li>
+
+                <li class="restarurant-menu-item" id="profile-btn">
+                    <div id="restaurant-sketch-container"><img id="rstrnt_avtar_profile" src="./images/avtar.png"
+                            alt=""></div> <a id="restaurant-profile-page-btn" href="/">Profile</a>
+                </li>
+                <div id="restaurant-logout-btn-container"><img id="restaurant-logout-btn" src="./images/logout-img.png"
+                        alt=""></div>
+            </ul>
+        </nav>
+
+
+
+        <!-- // SECTOR,PLOT,PHASE ,BUILDING  FILTER SECTION // -->
+
+        <div id="area-filter-section">
+            <h3 id="area-heading">
+                AREAS &#x027E9
+            </h3>
+
+            <div id="areas-list-container">
+                <a class="areas" href="/" id="phase2">Phase 2</a>
+                <a class="areas" href="/" id="phase1">Phase 1</a>
+                <a class="areas" href="/" id="panchanand">Panchanand Heights (building)</a>
+                <a class="areas" href="/" id="sec21">Sec-21</a>
+                <a class="areas" href="/" id="sec9">Sec-9</a>
+                <a class="areas" href="/" id="sec12">Sec-12</a>
+                <a class="areas" href="/" id="gami">Gami (building)</a>
+                <a class="areas" href="/" id="sec4">Sec-4</a>
+            </div>
+        </div>
+
+        <div id="orders-section">
+            <div id="orders-heading">
+                <h1>Orders</h1>
+                <p id="numbers-of-orders">0</p>
+            </div>
+            <div id="non-cancled-orders-section">
+
+
+                <div id="non-cancled-orders-container">
+
+                    <!-- <div class="main-order">
+                        <div id="upper-container">
+                            <div id="user-profile-cont">
+                                <div id="user-profile">
+                                    <span id="img-cont">
+                                        <img src="https://media.istockphoto.com/photos/millennial-male-team-leader-organize-virtual-workshop-with-employees-picture-id1300972574?b=1&k=20&m=1300972574&s=170667a&w=0&h=2nBGC7tr0kWIU8zRQ3dMg-C5JLo9H2sNUuDjQ5mlYfo="
+                                            alt="">
+                                    </span>
+                                    <h3>Arif alam</h3>
+                                </div>
+                                <div id="date-partition-line-cont">
+                                    <p id="partition-line">|</p>
+
+                                    <div id="date">
+                                        <span id="year">2022</span>
+                                        <span id="month-date">SEP - 9</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div id="address-cont">
+                                <span>Address :</span> Taloja Phase 1 , sector - 9, plor - 15-18, panchanand heights ,
+                                C-wing 802
+                            </div>
+                        </div>
+                        <div id="ordered-items-container">
+                            <div class="item">
+                                <div id="item-detail">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABe0lEQVRIie2VT07CQBSHf2/EGxikFcOCBXoHNwqNR5CEC1SaaKJxiYms1RgS5U9cGgnegFhYeQWRDRuEKvEI2j4XRAMlLdOy5dvNvN9732QmaYElAaDJhfqsv4AQX3gqY2BplZ2/ZcSljEPQkQPRCztfwEnC4dLkXsQdciB6n3u3r2ElsbYBAXtqb0bih9IyEiBnjWz7y9Jqfdk+KYli6jkCCmA7BQZAAmpL7wJctNLV+rx+MS+wYeo3BDwASE0VGFtgelTMw6uFJIqp5xg49ssQ+EQ19WxoCQEFv/oE56EkSstIwH1F3myrzfxmYAkzRyUF4zzZ64Elgn9GQSTEK555T4ml1fogdCUdHWv/7j2wZAwXZQzEuPCr+0qsdLXOoGv/c9DlUKs8hZYAwEemfApwFsCbq9QhxoGllc/mzZD6rFiZagNAQ23mN3mVo4K+R8Pd+4FMr7TkXzZ+XM8HlpYIOMlY2wg6Z6rfX8IYwOGS+38QGIb0VS6Z4RdS9nWtHBHPNgAAAABJRU5ErkJggg==">
+                                    <h3>Pizza</h3>
+                                </div>
+                                <div id="item-rate-qty">
+                                    <span>Qty - 12</span>
+                                    <span>&#x20B9; 300</span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div id="item-detail">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABfklEQVRIie3Vv07CUBQG8O+0DBDrZnCBMDCoD1BJiIlAwjNI4jtoonHERGY1hmcwEnwHqCQu0DCKLCzIQhwp6QDtcagooC23ZdRvu3/O+eXem7TAf3yE5gdaSnkGU2z9rjzINo2D2TC0sMgUYwknsLgXGJApSTaV56dCPzZZ3MvpxktQo64qAC1c0C+IR2rpcIIsacua8nu+bfZF64QQTd04BlERU+wAQEgGtJTSJeZSpjWurKqXVgPKHYjuAQf4CmOXQQ9P+5s3ayHOCXDqtYfBZ1pKKQRGQFT0XP+WLgMhtXQ4geUrcs9eQ43EfSPyRIoKAgAAm2jbNzKxeegHkdh9vyuSb5t9ELoiAAGdQ918840AADGXRBCbceW17olkWuMKgW49BabrnG48BkYcaHQORgHA6/w8AR1mHGX10cWqHkKflaxuVAFUG2okbkkUJfAw0zQHIrXCyCyfj+v6wOKITMm6qvjts1AP2wshHpBN5eX/ga/YTp/gDf58PgBPhXa4iVNikAAAAABJRU5ErkJggg==" />
+                                    <h3>Mutton biryani</h3>
+                                </div>
+                                <div id="item-rate-qty">
+                                    <span>Qty - 1/2</span>
+                                    <span>&#x20B9; 4000</span>
+                                </div>
+                            </div>
+
+                            <div class="item" id="extra">
+                                <div id="item-detail">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABfklEQVRIie3Vv07CUBQG8O+0DBDrZnCBMDCoD1BJiIlAwjNI4jtoonHERGY1hmcwEnwHqCQu0DCKLCzIQhwp6QDtcagooC23ZdRvu3/O+eXem7TAf3yE5gdaSnkGU2z9rjzINo2D2TC0sMgUYwknsLgXGJApSTaV56dCPzZZ3MvpxktQo64qAC1c0C+IR2rpcIIsacua8nu+bfZF64QQTd04BlERU+wAQEgGtJTSJeZSpjWurKqXVgPKHYjuAQf4CmOXQQ9P+5s3ayHOCXDqtYfBZ1pKKQRGQFT0XP+WLgMhtXQ4geUrcs9eQ43EfSPyRIoKAgAAm2jbNzKxeegHkdh9vyuSb5t9ELoiAAGdQ918840AADGXRBCbceW17olkWuMKgW49BabrnG48BkYcaHQORgHA6/w8AR1mHGX10cWqHkKflaxuVAFUG2okbkkUJfAw0zQHIrXCyCyfj+v6wOKITMm6qvjts1AP2wshHpBN5eX/ga/YTp/gDf58PgBPhXa4iVNikAAAAABJRU5ErkJggg==" />
+                                    <h3>Cold drink</h3>
+                                </div>
+                                <div id="item-rate-qty">
+                                    <span>Qty - 4</span>
+                                    <span>&#x20B9; 250</span>
+                                </div>
+                            </div>
+
+                            <div class="item">
+                                <div id="item-detail">
+                                    <img
+                                        src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABfklEQVRIie3Vv07CUBQG8O+0DBDrZnCBMDCoD1BJiIlAwjNI4jtoonHERGY1hmcwEnwHqCQu0DCKLCzIQhwp6QDtcagooC23ZdRvu3/O+eXem7TAf3yE5gdaSnkGU2z9rjzINo2D2TC0sMgUYwknsLgXGJApSTaV56dCPzZZ3MvpxktQo64qAC1c0C+IR2rpcIIsacua8nu+bfZF64QQTd04BlERU+wAQEgGtJTSJeZSpjWurKqXVgPKHYjuAQf4CmOXQQ9P+5s3ayHOCXDqtYfBZ1pKKQRGQFT0XP+WLgMhtXQ4geUrcs9eQ43EfSPyRIoKAgAAm2jbNzKxeegHkdh9vyuSb5t9ELoiAAGdQ918840AADGXRBCbceW17olkWuMKgW49BabrnG48BkYcaHQORgHA6/w8AR1mHGX10cWqHkKflaxuVAFUG2okbkkUJfAw0zQHIrXCyCyfj+v6wOKITMm6qvjts1AP2wshHpBN5eX/ga/YTp/gDf58PgBPhXa4iVNikAAAAABJRU5ErkJggg==" />
+                                    <h3>Mutton biryani</h3>
+                                </div>
+                                <div id="item-rate-qty">
+                                    <span>Qty - 1/2</span>
+                                    <span>&#x20B9; 400</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div id="order-total-section">
+                            <h3 id="done-order">DONE</h3>
+                            <button>Confirm it</button>
+                            <h3 id="cancelled-heading">CANCELLED</h3>
+                            <p>Total - &#x20B9; 4550</p>
+                        </div>
+                    </div> -->
+
+                </div>
+            </div>
+
+        </div>
+
+        <!-- ================= RESTAURANT PAGE SEARCH PAGE =================== -->
+
+        <div id="restaurant-search-page">
+            <div class="restaurant-search-area">
+                <input type="text" placeholder="Name; building; date; month; sec. ; phase; city; year"
+                    onkeyup="rstrnt_searching_orders()" id="rstrnt_search_bar">
+                <button>Search</button>
+            </div>
+
+            <hr>
+            <div id="search-result-container">
+                <!-- <div class="main-order">
+                    <div id="upper-container">
+                        <div id="user-profile-cont">
+                            <div id="user-profile">
+                                <span id="img-cont">
+                                    <img src="https://media.istockphoto.com/photos/millennial-male-team-leader-organize-virtual-workshop-with-employees-picture-id1300972574?b=1&k=20&m=1300972574&s=170667a&w=0&h=2nBGC7tr0kWIU8zRQ3dMg-C5JLo9H2sNUuDjQ5mlYfo="
+                                        alt="">
+                                </span>
+                                <h3>Arif alam</h3>
+                            </div>
+                            <div id="date-partition-line-cont">
+                                <p id="partition-line">|</p>
+
+                                <div id="date">
+                                    <span id="year">2022</span>
+                                    <span id="month-date">SEP - 9</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="address-cont">
+                            <span>Address :</span> Taloja Phase 1 , sector - 9, plor - 15-18, panchanand heights ,
+                            C-wing 802
+                        </div>
+                    </div>
+                    <div id="ordered-items-container">
+                        <div class="item">
+                            <div id="item-detail">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABe0lEQVRIie2VT07CQBSHf2/EGxikFcOCBXoHNwqNR5CEC1SaaKJxiYms1RgS5U9cGgnegFhYeQWRDRuEKvEI2j4XRAMlLdOy5dvNvN9732QmaYElAaDJhfqsv4AQX3gqY2BplZ2/ZcSljEPQkQPRCztfwEnC4dLkXsQdciB6n3u3r2ElsbYBAXtqb0bih9IyEiBnjWz7y9Jqfdk+KYli6jkCCmA7BQZAAmpL7wJctNLV+rx+MS+wYeo3BDwASE0VGFtgelTMw6uFJIqp5xg49ssQ+EQ19WxoCQEFv/oE56EkSstIwH1F3myrzfxmYAkzRyUF4zzZ64Elgn9GQSTEK555T4ml1fogdCUdHWv/7j2wZAwXZQzEuPCr+0qsdLXOoGv/c9DlUKs8hZYAwEemfApwFsCbq9QhxoGllc/mzZD6rFiZagNAQ23mN3mVo4K+R8Pd+4FMr7TkXzZ+XM8HlpYIOMlY2wg6Z6rfX8IYwOGS+38QGIb0VS6Z4RdS9nWtHBHPNgAAAABJRU5ErkJggg==">
+                                <h3>Pizza</h3>
+                            </div>
+                            <div id="item-rate-qty">
+                                <span>Qty - 12</span>
+                                <span>&#x20B9; 300</span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div id="item-detail">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABfklEQVRIie3Vv07CUBQG8O+0DBDrZnCBMDCoD1BJiIlAwjNI4jtoonHERGY1hmcwEnwHqCQu0DCKLCzIQhwp6QDtcagooC23ZdRvu3/O+eXem7TAf3yE5gdaSnkGU2z9rjzINo2D2TC0sMgUYwknsLgXGJApSTaV56dCPzZZ3MvpxktQo64qAC1c0C+IR2rpcIIsacua8nu+bfZF64QQTd04BlERU+wAQEgGtJTSJeZSpjWurKqXVgPKHYjuAQf4CmOXQQ9P+5s3ayHOCXDqtYfBZ1pKKQRGQFT0XP+WLgMhtXQ4geUrcs9eQ43EfSPyRIoKAgAAm2jbNzKxeegHkdh9vyuSb5t9ELoiAAGdQ918840AADGXRBCbceW17olkWuMKgW49BabrnG48BkYcaHQORgHA6/w8AR1mHGX10cWqHkKflaxuVAFUG2okbkkUJfAw0zQHIrXCyCyfj+v6wOKITMm6qvjts1AP2wshHpBN5eX/ga/YTp/gDf58PgBPhXa4iVNikAAAAABJRU5ErkJggg==" />
+                                <h3>Mutton biryani</h3>
+                            </div>
+                            <div id="item-rate-qty">
+                                <span>Qty - 1/2</span>
+                                <span>&#x20B9; 4000</span>
+                            </div>
+                        </div>
+
+                        <div class="item" id="extra">
+                            <div id="item-detail">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABfklEQVRIie3Vv07CUBQG8O+0DBDrZnCBMDCoD1BJiIlAwjNI4jtoonHERGY1hmcwEnwHqCQu0DCKLCzIQhwp6QDtcagooC23ZdRvu3/O+eXem7TAf3yE5gdaSnkGU2z9rjzINo2D2TC0sMgUYwknsLgXGJApSTaV56dCPzZZ3MvpxktQo64qAC1c0C+IR2rpcIIsacua8nu+bfZF64QQTd04BlERU+wAQEgGtJTSJeZSpjWurKqXVgPKHYjuAQf4CmOXQQ9P+5s3ayHOCXDqtYfBZ1pKKQRGQFT0XP+WLgMhtXQ4geUrcs9eQ43EfSPyRIoKAgAAm2jbNzKxeegHkdh9vyuSb5t9ELoiAAGdQ918840AADGXRBCbceW17olkWuMKgW49BabrnG48BkYcaHQORgHA6/w8AR1mHGX10cWqHkKflaxuVAFUG2okbkkUJfAw0zQHIrXCyCyfj+v6wOKITMm6qvjts1AP2wshHpBN5eX/ga/YTp/gDf58PgBPhXa4iVNikAAAAABJRU5ErkJggg==" />
+                                <h3>Cold drink</h3>
+                            </div>
+                            <div id="item-rate-qty">
+                                <span>Qty - 4</span>
+                                <span>&#x20B9; 250</span>
+                            </div>
+                        </div>
+
+                        <div class="item">
+                            <div id="item-detail">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABfklEQVRIie3Vv07CUBQG8O+0DBDrZnCBMDCoD1BJiIlAwjNI4jtoonHERGY1hmcwEnwHqCQu0DCKLCzIQhwp6QDtcagooC23ZdRvu3/O+eXem7TAf3yE5gdaSnkGU2z9rjzINo2D2TC0sMgUYwknsLgXGJApSTaV56dCPzZZ3MvpxktQo64qAC1c0C+IR2rpcIIsacua8nu+bfZF64QQTd04BlERU+wAQEgGtJTSJeZSpjWurKqXVgPKHYjuAQf4CmOXQQ9P+5s3ayHOCXDqtYfBZ1pKKQRGQFT0XP+WLgMhtXQ4geUrcs9eQ43EfSPyRIoKAgAAm2jbNzKxeegHkdh9vyuSb5t9ELoiAAGdQ918840AADGXRBCbceW17olkWuMKgW49BabrnG48BkYcaHQORgHA6/w8AR1mHGX10cWqHkKflaxuVAFUG2okbkkUJfAw0zQHIrXCyCyfj+v6wOKITMm6qvjts1AP2wshHpBN5eX/ga/YTp/gDf58PgBPhXa4iVNikAAAAABJRU5ErkJggg==" />
+                                <h3>Mutton biryani</h3>
+                            </div>
+                            <div id="item-rate-qty">
+                                <span>Qty - 1/2</span>
+                                <span>&#x20B9; 400</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div id="item-detail">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABfklEQVRIie3Vv07CUBQG8O+0DBDrZnCBMDCoD1BJiIlAwjNI4jtoonHERGY1hmcwEnwHqCQu0DCKLCzIQhwp6QDtcagooC23ZdRvu3/O+eXem7TAf3yE5gdaSnkGU2z9rjzINo2D2TC0sMgUYwknsLgXGJApSTaV56dCPzZZ3MvpxktQo64qAC1c0C+IR2rpcIIsacua8nu+bfZF64QQTd04BlERU+wAQEgGtJTSJeZSpjWurKqXVgPKHYjuAQf4CmOXQQ9P+5s3ayHOCXDqtYfBZ1pKKQRGQFT0XP+WLgMhtXQ4geUrcs9eQ43EfSPyRIoKAgAAm2jbNzKxeegHkdh9vyuSb5t9ELoiAAGdQ918840AADGXRBCbceW17olkWuMKgW49BabrnG48BkYcaHQORgHA6/w8AR1mHGX10cWqHkKflaxuVAFUG2okbkkUJfAw0zQHIrXCyCyfj+v6wOKITMm6qvjts1AP2wshHpBN5eX/ga/YTp/gDf58PgBPhXa4iVNikAAAAABJRU5ErkJggg==" />
+                                <h3>Mutton biryani</h3>
+                            </div>
+                            <div id="item-rate-qty">
+                                <span>Qty - 1/2</span>
+                                <span>&#x20B9; 400</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div id="item-detail">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABfklEQVRIie3Vv07CUBQG8O+0DBDrZnCBMDCoD1BJiIlAwjNI4jtoonHERGY1hmcwEnwHqCQu0DCKLCzIQhwp6QDtcagooC23ZdRvu3/O+eXem7TAf3yE5gdaSnkGU2z9rjzINo2D2TC0sMgUYwknsLgXGJApSTaV56dCPzZZ3MvpxktQo64qAC1c0C+IR2rpcIIsacua8nu+bfZF64QQTd04BlERU+wAQEgGtJTSJeZSpjWurKqXVgPKHYjuAQf4CmOXQQ9P+5s3ayHOCXDqtYfBZ1pKKQRGQFT0XP+WLgMhtXQ4geUrcs9eQ43EfSPyRIoKAgAAm2jbNzKxeegHkdh9vyuSb5t9ELoiAAGdQ918840AADGXRBCbceW17olkWuMKgW49BabrnG48BkYcaHQORgHA6/w8AR1mHGX10cWqHkKflaxuVAFUG2okbkkUJfAw0zQHIrXCyCyfj+v6wOKITMm6qvjts1AP2wshHpBN5eX/ga/YTp/gDf58PgBPhXa4iVNikAAAAABJRU5ErkJggg==" />
+                                <h3>Mutton biryani</h3>
+                            </div>
+                            <div id="item-rate-qty">
+                                <span>Qty - 1/2</span>
+                                <span>&#x20B9; 400</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div id="item-detail">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABfklEQVRIie3Vv07CUBQG8O+0DBDrZnCBMDCoD1BJiIlAwjNI4jtoonHERGY1hmcwEnwHqCQu0DCKLCzIQhwp6QDtcagooC23ZdRvu3/O+eXem7TAf3yE5gdaSnkGU2z9rjzINo2D2TC0sMgUYwknsLgXGJApSTaV56dCPzZZ3MvpxktQo64qAC1c0C+IR2rpcIIsacua8nu+bfZF64QQTd04BlERU+wAQEgGtJTSJeZSpjWurKqXVgPKHYjuAQf4CmOXQQ9P+5s3ayHOCXDqtYfBZ1pKKQRGQFT0XP+WLgMhtXQ4geUrcs9eQ43EfSPyRIoKAgAAm2jbNzKxeegHkdh9vyuSb5t9ELoiAAGdQ918840AADGXRBCbceW17olkWuMKgW49BabrnG48BkYcaHQORgHA6/w8AR1mHGX10cWqHkKflaxuVAFUG2okbkkUJfAw0zQHIrXCyCyfj+v6wOKITMm6qvjts1AP2wshHpBN5eX/ga/YTp/gDf58PgBPhXa4iVNikAAAAABJRU5ErkJggg==" />
+                                <h3>Mutton biryani</h3>
+                            </div>
+                            <div id="item-rate-qty">
+                                <span>Qty - 1/2</span>
+                                <span>&#x20B9; 400</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div id="item-detail">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABfklEQVRIie3Vv07CUBQG8O+0DBDrZnCBMDCoD1BJiIlAwjNI4jtoonHERGY1hmcwEnwHqCQu0DCKLCzIQhwp6QDtcagooC23ZdRvu3/O+eXem7TAf3yE5gdaSnkGU2z9rjzINo2D2TC0sMgUYwknsLgXGJApSTaV56dCPzZZ3MvpxktQo64qAC1c0C+IR2rpcIIsacua8nu+bfZF64QQTd04BlERU+wAQEgGtJTSJeZSpjWurKqXVgPKHYjuAQf4CmOXQQ9P+5s3ayHOCXDqtYfBZ1pKKQRGQFT0XP+WLgMhtXQ4geUrcs9eQ43EfSPyRIoKAgAAm2jbNzKxeegHkdh9vyuSb5t9ELoiAAGdQ918840AADGXRBCbceW17olkWuMKgW49BabrnG48BkYcaHQORgHA6/w8AR1mHGX10cWqHkKflaxuVAFUG2okbkkUJfAw0zQHIrXCyCyfj+v6wOKITMm6qvjts1AP2wshHpBN5eX/ga/YTp/gDf58PgBPhXa4iVNikAAAAABJRU5ErkJggg==" />
+                                <h3>Mutton biryani</h3>
+                            </div>
+                            <div id="item-rate-qty">
+                                <span>Qty - 1/2</span>
+                                <span>&#x20B9; 400</span>
+                            </div>
+                        </div>
+                        <div class="item">
+                            <div id="item-detail">
+                                <img
+                                    src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABkAAAAZCAYAAADE6YVjAAAABmJLR0QA/wD/AP+gvaeTAAABfklEQVRIie3Vv07CUBQG8O+0DBDrZnCBMDCoD1BJiIlAwjNI4jtoonHERGY1hmcwEnwHqCQu0DCKLCzIQhwp6QDtcagooC23ZdRvu3/O+eXem7TAf3yE5gdaSnkGU2z9rjzINo2D2TC0sMgUYwknsLgXGJApSTaV56dCPzZZ3MvpxktQo64qAC1c0C+IR2rpcIIsacua8nu+bfZF64QQTd04BlERU+wAQEgGtJTSJeZSpjWurKqXVgPKHYjuAQf4CmOXQQ9P+5s3ayHOCXDqtYfBZ1pKKQRGQFT0XP+WLgMhtXQ4geUrcs9eQ43EfSPyRIoKAgAAm2jbNzKxeegHkdh9vyuSb5t9ELoiAAGdQ918840AADGXRBCbceW17olkWuMKgW49BabrnG48BkYcaHQORgHA6/w8AR1mHGX10cWqHkKflaxuVAFUG2okbkkUJfAw0zQHIrXCyCyfj+v6wOKITMm6qvjts1AP2wshHpBN5eX/ga/YTp/gDf58PgBPhXa4iVNikAAAAABJRU5ErkJggg==" />
+                                <h3>Mutton biryani</h3>
+                            </div>
+                            <div id="item-rate-qty">
+                                <span>Qty - 1/2</span>
+                                <span>&#x20B9; 400</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="order-total-section">
+                        <h3 id="done-order">DONE</h3>
+                        <button>Confirm it</button>
+                        <h3 id="cancelled-heading">CANCELLED</h3>
+                        <p>Total - &#x20B9; 4550</p>
+                    </div>
+                </div> -->
+                
+            </div>
+
+        </div>
+
+        <!-- /* ===================== RESTAURANT PROFILE PAGE ============= */ -->
+
+        <div id="restaurant-profile-page">
+            <div id="restautant-profile-page-upper-part">
+                <div id="restaurant-profilepage-profile">
+                    <img id="rstrnt-profilepg-img"
+                        src="https://images.unsplash.com/photo-1591261730799-ee4e6c2d16d7?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8cmVzdGF1cmFudCUyMGV4dGVyaW9yfGVufDB8fDB8fA%3D%3D&w=1000&q=80"
+                        alt="">
+                </div>
+                <div id="restaurant-profilepage-personal-detail">
+                    <h1 id="rstrnt_profile_name">Krish Chiness<h1>
+                            <div id="restaurant-profilepage-mobile-number-container">
+                                <h4>Password - </h4>
+                                <h4 id="restaurant-profilepage-password">7485845670</h4>
+                            </div>
+                            <div id="restaurant-profilepage-email-container">
+                                <h4>E-mail - </h4>
+                                <h4 id="resaurant-profilepage-email">arifalam1207@gmail.com</h4>
+                            </div>
+                </div>
+
+                <button id="restaurant-profile-page-update-btn">update</button>
+            </div>
+
+            <div id="restaurant-profile-total-orders-cont">
+                <h1>Orders&nbsp;-&nbsp;</h1>
+                <h2 id="restaurant-profile-total-orders">55</h2>
+            </div>
+
+            <div id="restaurant-profile-orders-categories-cont">
+                <div class="order-category" id="pending-order-cont">
+                    <h1>Pending orders</h1>
+                    <h2 id="pending-orders">10</h2>
+                </div>
+                <div class="order-category" id="taken-order-cont">
+                    <h1>Taken orders</h1>
+                    <h2 id="taken-orders">40</h2>
+                </div>
+                <div class="order-category" id="cancelled-order-cont">
+                    <h1>Cancelled</h1>
+                    <h2 id="cancelled-orders">5</h2>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+</body>
+<script src="http://localhost:5000/socket.io/socket.io.js"></script>
+<script src="/SCRIPTS/script.js"></script>
+<script src="/SCRIPTS/client.js"></script>
+
+</html>
