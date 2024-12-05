@@ -3,7 +3,7 @@
 let express = require("express");
 let app = express();
 const cors = require("cors");
-
+const socketIo = require("socket.io");
 require("dotenv").config();
 const port = process.env.PORT || 3000;
 // listing server
@@ -15,19 +15,45 @@ let fs = require("fs");
 // const { SocketAddress } = require("net");
 const path = require("path"); //" VERY IMPORTAN " , BY USING THIS WE CAN INCULDE ANY 'FILE' WHITOUT READING THAT FILE BY 'fs'
 // const { isUint16Array } = require("util/types");
-let io = require("socket.io")(server, {
-  cors: {
-    origin: "*",
-  },
-});
+// let ios = require("socket.io")(server, {
+//   cors: {
+//     origin: "*",
+//   },
+// });
+
+const allowedOrigins = [
+  "https://foodies-mu-nine.vercel.app",
+  "http://localhost:3000",
+];
 
 app.use(
   cors({
-    origin: "https://foodies-mu-nine.vercel.app/", // Replace with your Vercel URL
+    origin: (origin, callback) => {
+      if (!origin || allowedOrigins.includes(origin)) {
+        callback(null, true);
+      } else {
+        callback(new Error("Not allowed by CORS"));
+      }
+    },
     methods: ["GET", "POST", "PUT", "DELETE"],
     credentials: true,
   })
 );
+
+const io = socketIo(server, {
+  cors: {
+    origin: allowedOrigins,
+    methods: ["GET", "POST"],
+  },
+});
+
+// app.use(
+//   cors({
+//     origin: "https://foodies-mu-nine.vercel.app", // Replace with your Vercel URL
+//     methods: ["GET", "POST", "PUT", "DELETE"],
+//     credentials: true,
+//   })
+// );
 
 let home = path.join(__dirname, "./public"); // "__dirname" is for just a 'FOLDER' , for a file - "__filename"
 app.use(express.static(home));
