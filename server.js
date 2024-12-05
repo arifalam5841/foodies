@@ -1,7 +1,9 @@
 // const { profile } = require('console');
 // const { Cipher } = require('crypto');
-let express = require("express");
+let express = require("0express");
 let app = express();
+const cors = require("cors");
+
 require("dotenv").config();
 const port = process.env.PORT || 3000;
 // listing server
@@ -10,14 +12,22 @@ let server = app.listen(port, () => {
 });
 
 let fs = require("fs");
-const { SocketAddress } = require("net");
+// const { SocketAddress } = require("net");
 const path = require("path"); //" VERY IMPORTAN " , BY USING THIS WE CAN INCULDE ANY 'FILE' WHITOUT READING THAT FILE BY 'fs'
-const { isUint16Array } = require("util/types");
+// const { isUint16Array } = require("util/types");
 let io = require("socket.io")(server, {
   cors: {
     origin: "*",
   },
 });
+
+app.use(
+  cors({
+    origin: "https://foodies-mu-nine.vercel.app/", // Replace with your Vercel URL
+    methods: ["GET", "POST", "PUT", "DELETE"],
+    credentials: true,
+  })
+);
 
 let home = path.join(__dirname, "./public"); // "__dirname" is for just a 'FOLDER' , for a file - "__filename"
 app.use(express.static(home));
